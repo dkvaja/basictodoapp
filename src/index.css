@@ -1,0 +1,148 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body
+{
+    font-size: 2vh;
+}
+.box
+{
+    background-color: rgb(255, 209, 217);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     min-height: 81%; 
+     height: 100%;
+     /* padding: 1rem; */
+    border-radius: 1rem;
+}
+
+.main-box
+{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(45deg,rgb(192, 192, 192),white,rgb(196, 196, 196));
+    flex-direction: column;
+}
+
+.flex-all-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.heading
+{
+    text-align: center;
+    background-color: palevioletred;
+    color: white;
+    padding: .5rem 0rem;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+    
+}
+
+#footer
+{
+   font-weight: bold;
+   font-size: .7rem;
+   color: palevioletred;
+   margin: 1rem;
+}
+.group1
+{
+    margin: 1rem 0rem;
+    display: flex;
+    width: 100;
+    justify-content: center;
+}
+
+
+input
+{
+    margin: 1rem;
+    background-color: transparent;
+    border-style: none;
+    color: palevioletred;
+    padding: 0rem;
+    width: 80%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-bottom: 4px solid palevioletred;
+}
+
+.btn
+{
+    background-color: palevioletred;
+    border-style: none;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: .5rem;
+    width:4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn:hover
+{
+    background-color: green;
+}
+
+.rbtn
+{
+    background-color: palevioletred;
+    border-style: none;
+    font-size: .5rem;
+    color: white;
+    padding: .7rem;
+    width: rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: .2rem;
+}
+.rbtn:hover
+{
+    background-color: red;
+}
+.taskList
+{
+    background-color: aqua;
+}
+
+ol
+{
+    /* background-color: peru; */
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+li
+{
+    color: palevioletred;
+    font-weight: bold;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.list-style
+{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    margin: .8rem 0rem;
+}
