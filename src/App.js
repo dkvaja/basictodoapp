@@ -2,27 +2,27 @@ import React, { useState } from "react";
 import ListItems from "./ListItems";
 
 const App = () => {
-  const [list, updateList] = useState("");
+  const [list, setList] = useState("");
   const [item, setItem] = useState([]);
   const printList = (event) => {
-      updateList(event.target.value);
+    if (!!event.target.value) setList(event.target.value);
   };
 
   const showList = () => {
-    
+
     setItem((oldItems) => {
       return [...oldItems, list];
     });
-    updateList("");
+    setList("");
   };
-  const deleteItem = (id) =>{
+  const deleteItem = (id) => {
     setItem((oldItems) => {
-      return oldItems.filter((arrele,index) => {
+      return oldItems.filter((arrele, index) => {
         return index !== id;
       });
     });
-    
-}
+
+  }
 
   return (
     <>
@@ -38,14 +38,14 @@ const App = () => {
               placeholder="Enter Your Task Here"
               onChange={printList}
               value={list}
-              
+
             />
             <button className="btn" onClick={showList}>
               +
             </button>
           </div>
           <ol>
-            {item.map((valuee,index) => {
+            {item.map((valuee, index) => {
               return <ListItems key={index} id={index} onSelect={deleteItem} val={valuee} />;
             })}
           </ol>
